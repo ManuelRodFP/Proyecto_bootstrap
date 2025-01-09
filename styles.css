@@ -1,0 +1,20 @@
+* {
+
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.carousel-item img {
+    width: 100px;
+    /* Ajusta el tamaño de las imágenes */
+    height: auto;
+}
+
+.carousel-item:not(.active) {
+    opacity: 0.5;
+    /* Haz que las imágenes no activas sean más transparentes */
+    transform: scale(0.8);
+    /* Haz que las imágenes no activas sean más pequeñas */
+}
