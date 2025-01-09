@@ -1,8 +1,14 @@
 * {
 
-    font-family: "Montserrat", serif;
+    font-family: "Bebas Neue", serif;
     font-weight: 600;
     font-style: normal;
+
+}
+
+body {
+
+    background-color: black;
 
 }
 
@@ -10,6 +16,19 @@
     width: 100px;
     /* Ajusta el tamaño de las imágenes */
     height: auto;
+}
+
+main {
+
+    background-image: url(imagenes/degradado.jpg);
+    background-size: cover;
+
+}
+
+section {
+
+    background-color: #22577a;
+
 }
 
 .carousel-item:not(.active) {
