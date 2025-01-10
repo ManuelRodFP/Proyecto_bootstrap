@@ -1,39 +1,105 @@
 * {
-
-    font-family: "Bebas Neue", serif;
+    font-family: "Montserrat", serif;
     font-weight: 600;
     font-style: normal;
-
 }
 
 body {
-
     background-color: black;
-
 }
 
 .carousel-item img {
-    width: 100px;
-    /* Ajusta el tamaño de las imágenes */
-    height: auto;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+header {
+z-index: 1000;
+
 }
 
 main {
+    background-image: url(imagenes/fondo/4Cb2.gif);
+    background-size: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    width: 100%;
+}
 
-    background-image: url(imagenes/degradado.jpg);
+.login {
+
+    background-image: url(imagenes/fondo/8VvO.gif);
+    background-position: center;
+        background-repeat: no-repeat;
+        background-color: black;
+}
+
+.carousel-item {
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.masescuchadas {
+
+    font-size: 1vw;
+    background-image: url(imagenes/fondo/2MdY.gif);
+    background-repeat: no-repeat;
     background-size: cover;
 
 }
 
-section {
+.artistasdelmomento {
 
-    background-color: #22577a;
-
+    font-size: 1vw;
+    background-image: url(imagenes/fondo/8VvO.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.carousel-item:not(.active) {
-    opacity: 0.5;
-    /* Haz que las imágenes no activas sean más transparentes */
-    transform: scale(0.8);
-    /* Haz que las imágenes no activas sean más pequeñas */
+
+
+.carousel-item img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+    display: block;
+    transform: translateX(0);
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+}
+
+.carousel-item-prev {
+    transform: translateX(-100%);
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    transform: translateX(0);
+}
+
+
+@media (max-width: 900px) {
+    main {
+        background-image: url(imagenes/fondo/4Cb2.gif);
+        background-size:  cover;
+    }
+
+    .bienvenida .b {
+
+        display: none;
+    
+    }
 }
