@@ -15,7 +15,7 @@ body {
 }
 
 header {
-z-index: 1000;
+    z-index: 1000;
 
 }
 
@@ -32,8 +32,17 @@ main {
 
     background-image: url(imagenes/fondo/8VvO.gif);
     background-position: center;
-        background-repeat: no-repeat;
-        background-color: black;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.quepiensas {
+
+    background-image: url(imagenes/fondo/2MdY.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
 }
 
 .carousel-item {
@@ -94,12 +103,12 @@ main {
 @media (max-width: 900px) {
     main {
         background-image: url(imagenes/fondo/4Cb2.gif);
-        background-size:  cover;
+        background-size: cover;
     }
 
     .bienvenida .b {
 
         display: none;
-    
+
     }
 }
