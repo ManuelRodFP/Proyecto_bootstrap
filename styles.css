@@ -8,17 +8,6 @@ body {
     background-color: black;
 }
 
-.carousel-item img {
-    width: 100%;
-    max-height: 500px;
-    object-fit: cover;
-}
-
-header {
-    z-index: 1000;
-
-}
-
 main {
     background-image: url(imagenes/fondo/4Cb2.gif);
     background-size: 40%;
@@ -66,8 +55,6 @@ main {
     background-size: cover;
 }
 
-
-
 .carousel-item img {
     width: 100%;
     max-height: 500px;
@@ -106,7 +93,14 @@ main {
         background-size: cover;
     }
 
-    .bienvenida .b {
+    .masescuchadas div p {
+
+        display: none;
+
+    }
+
+
+    .artistasdelmomento div p {
 
         display: none;
 
